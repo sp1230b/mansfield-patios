@@ -57,10 +57,27 @@ click it to see the site live next to the chat. After any change press **F5**.
    - Buy it for him (~£8–12/year on **Namecheap**, **GoDaddy**, **123 Reg**) and
      bill it back, **or** teach him to buy it himself.
 
-### Putting it online (when he says yes)
-Ask Claude to walk you through any of these — all easy:
-- **Netlify** or **Cloudflare Pages** — drag this folder in; live in seconds.
-- **GitHub Pages** — free hosting from a folder like this.
+### Putting it online
+You deploy the **`dist`** folder (it contains only the website files).
+
+**Netlify Drop (fastest):** go to https://app.netlify.com/drop and drag the
+`dist` folder onto the page. To *update* a site you already made, sign in, open
+that site → **Deploys** tab → drag `dist` there (keeps the same link).
+
+**GitHub Pages (free, good for a custom domain) — no coding needed:**
+1. Make a free account at **github.com** (skip if you have one).
+2. Click **+ → New repository**. Name it e.g. `mansfield-patios`, set **Public**,
+   click **Create repository**.
+3. On the new repo page click **uploading an existing file**. Drag in the two
+   files from `dist` (`index.html` and `styles.css`). Click **Commit changes**.
+4. Go to **Settings → Pages** (left menu).
+5. Under **Build and deployment → Source** choose **Deploy from a branch**,
+   pick branch **main** and folder **/ (root)**, then **Save**.
+6. Wait ~1 minute, refresh. Your live link appears at the top:
+   `https://<your-username>.github.io/mansfield-patios/`
+7. To update later: repeat step 3 (upload the changed file, commit).
+8. Custom domain later: **Settings → Pages → Custom domain** — type the domain
+   you bought and follow the DNS instructions (ask Claude to help).
 
 ---
 
