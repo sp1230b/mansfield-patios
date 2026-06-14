@@ -136,7 +136,13 @@ body { font-family: var(--sans); color: var(--ink); background: var(--cream); li
 .g3 { background-image: url("https://lh3.googleusercontent.com/OKAbjcr0-4E5lpYcXxMmDWfuRQ-U2XDgST9_ApDkumAxFKaZMC2ftwPeIWyIG8vYw9OYzo6Tg55nv7wDYsdzNppFBR-OyjUZ2gZrvpk0REVZaEg6OPZ86LxiZLtakw=w800"); }
 .g4 { background-image: url("https://lh3.googleusercontent.com/4L7WdPhoN2fz1q63MwUFRoTHLjlIGatYFaURHW_BcSJxpH0m03Ox8wIJD_YuG0bdDSw3jcVvFp4egXqbytV7osWy3QEgg1-hc9B_Hze2pa0nUcLyD2e90NTQEW44mQ=w800"); }
 .g5 { background-image: url("https://lh3.googleusercontent.com/FjjrLkO9vWH3ZLQeyOsZXgY4EPYox4DNUNK9gfsHUhyJQrJJwSbvfA2A3kOtHzWJ3solsQP_bLduEHttyRMzXoM1iW6EOuHp4EfBh4-J8qxr6TTx1kOjbWtOVRZ8ww=w800"); }
-.g6 { background-image: url("https://lh3.googleusercontent.com/-_Iv1S_E84dBUE2XTpjqVA9BAWtSLX1MnmhBcYMn440SKZwKZxS6VTW4xGnsVW97xdNAk1enHOIGKCO64XWIpFvy_74QyodLfRdl5t99JpnxZFRzzNFvMvPtGY3pBg=w800"); }
+.g6 { background-image: url("https://lh3.googleusercontent.com/XDPrW0HUOMexB-qmd4u1rf8nITHUsLx2yu3NBxRewWHDQjYi1sRIGZC-kMTj0a-a68CS3YnTzyQm6OPSdAB6YteVzapBH3Iz0pbUvMhgsL-G8JeXETl1PoC0Yy2aRg=w800"); }
+.g7 { background-image: url("https://lh3.googleusercontent.com/26ZNc7CTLqpP_sl1wrI0yUGZ5KC_AvKL_DCJQHvn7Pk0IOkVvKC4if8tkHJOEX9pk700r2vRPn1FSYydEEn4b6DudCRocJz8G06on2p37jq5OSrWiL0_cE9hhgIe4GE=w800"); }
+.g8 { background-image: url("https://lh3.googleusercontent.com/rf6YXWQLMYG6SKHigKpY1lCrtv5Jo9Z7djksdAgSoMAjLdPcuSgR57Tii8yZ2xefFpej1cXANNaSVne_v26ILIpWazfJ9xLdXGFz4h29FIxFx8jtEheNYcouL5YRNQ=w800"); }
+.g9 { background-image: url("https://lh3.googleusercontent.com/MxjnUqVFFCWSodcEfvuPnCNgUQjccPm2HSbKxmO8kQBfkAiGVraJCafjAELR-WstW3RV24NRcCnHGR6-b-TP3oiE79LK44jaHtbgYSa1BjMp_drZA4PsCzc3R3tg0RY=w800"); }
+.g10 { background-image: url("https://lh3.googleusercontent.com/CLWk8_-tM5RYjXievhRepkIdWC5fHA13hRheV13Q8KlO3jQIIW375Ol78BE0kdoVqwwD7RF57UhDimF7psrxpaSsLono-q0yXjyPpdxPakkP8d4RoUH6sonroF4ZmVM=w800"); }
+.g11 { background-image: url("https://lh3.googleusercontent.com/G3BDE6TXExkWFLisWH2ATK71lR28Fy6daaGhx8m-g3BI33N4tE7fL1DVFh8MTlx6Brt1ofXnIyocHiQNP3vP2AhBr7PyyzNX-jAQZ9L75cVyL8Col0LzzmMc9Kn4jw=w800"); }
+.g12 { background-image: url("https://lh3.googleusercontent.com/sOnAU-TrNEThGH5xrC80hryVpe8pD9vI9J5OnKwxF1hkjisb-r1Pxu9P2vJ5wGKMTTUgJzZoB_NK20Tv-e4ArSBFXMYH34Wda-5GCcdGOugrs8EIl-ZXuvnOq15DWg=w800"); }
 
 /* ===== Reviews ===== */
 .reviews { background: var(--forest); color: #fff; }
