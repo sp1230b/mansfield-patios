@@ -1,0 +1,237 @@
+/* ===================================================================
+   Greenfield Gardens — stylesheet
+   The main colour is set once below. Change --brand to re-theme the
+   whole site for a different business (e.g. a blue for a plumber).
+   =================================================================== */
+
+:root {
+  --brand: #2e7d32;        /* main green */
+  --brand-dark: #1b5e20;   /* darker green for hovers */
+  --brand-light: #e8f5e9;  /* pale green background */
+  --text: #1f2a24;
+  --muted: #5f6f66;
+  --white: #ffffff;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background: var(--white);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: var(--brand); color: var(--white); box-shadow: var(--shadow); }
+.btn-primary:hover { background: var(--brand-dark); }
+.btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.8); }
+.btn-outline:hover { background: rgba(255,255,255,0.15); }
+
+/* ===== Navbar ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+  text-decoration: none;
+}
+.nav-links { display: flex; align-items: center; gap: 28px; }
+.nav-links a { color: var(--text); text-decoration: none; font-weight: 500; }
+.nav-links a:hover { color: var(--brand); }
+.nav-cta {
+  background: var(--brand);
+  color: var(--white) !important;
+  padding: 10px 18px;
+  border-radius: 999px;
+}
+.nav-cta:hover { background: var(--brand-dark); }
+
+/* ===== Hero ===== */
+.hero {
+  background: linear-gradient(rgba(27, 94, 32, 0.72), rgba(27, 94, 32, 0.72)),
+              url("https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  text-align: center;
+  padding: 110px 0 100px;
+}
+.hero h1 { font-size: 3rem; line-height: 1.15; margin-bottom: 18px; }
+.hero-sub { font-size: 1.25rem; max-width: 620px; margin: 0 auto 32px; opacity: 0.95; }
+.hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.hero-trust { margin-top: 28px; font-size: 1rem; opacity: 0.95; }
+
+/* ===== Sections ===== */
+.section { padding: 80px 0; }
+.section-alt { background: var(--brand-light); }
+.section-title { font-size: 2.2rem; text-align: center; color: var(--brand-dark); }
+.section-lead { text-align: center; color: var(--muted); margin: 12px auto 50px; max-width: 560px; }
+
+/* ===== Service cards ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.card {
+  background: var(--white);
+  border: 1px solid #eee;
+  border-radius: var(--radius);
+  padding: 32px 26px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+.card:hover { transform: translateY(-6px); }
+.card-icon { font-size: 2.4rem; margin-bottom: 14px; }
+.card h3 { color: var(--brand-dark); margin-bottom: 8px; }
+.card p { color: var(--muted); }
+
+/* ===== About ===== */
+.about-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.about-text .section-title { text-align: left; }
+.about-text p { margin-bottom: 16px; color: var(--muted); }
+.ticks { list-style: none; margin-top: 10px; }
+.ticks li { padding: 6px 0 6px 30px; position: relative; }
+.ticks li::before { content: "✅"; position: absolute; left: 0; }
+.about-stats { display: grid; gap: 18px; }
+.stat {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 22px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.stat-num { display: block; font-size: 2.2rem; font-weight: 700; color: var(--brand); }
+
+/* ===== Gallery ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.gallery-item {
+  height: 200px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  color: var(--white);
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  background-size: cover;
+  background-position: center;
+}
+.g1 { background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80"); }
+.g2 { background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80"); }
+.g3 { background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=600&q=80"); }
+.g4 { background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=600&q=80"); }
+.g5 { background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80"); }
+.g6 { background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=600&q=80"); }
+
+/* ===== Reviews ===== */
+.reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.review {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+.review p { font-style: italic; margin-bottom: 14px; }
+.review footer { font-weight: 600; color: var(--brand-dark); }
+
+/* ===== Contact ===== */
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+.contact-text .section-title { text-align: left; }
+.contact-line { font-size: 1.1rem; margin-top: 10px; }
+.contact-line a { color: var(--brand-dark); }
+.contact-form { display: grid; gap: 14px; }
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.contact-form input:focus,
+.contact-form textarea:focus { outline: 2px solid var(--brand); border-color: var(--brand); }
+.thanks {
+  display: none;
+  background: var(--brand-light);
+  border: 1px solid var(--brand);
+  color: var(--brand-dark);
+  padding: 24px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--brand-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 40px 0;
+}
+.footer p { margin: 6px 0; }
+.footer-small { opacity: 0.7; font-size: 0.9rem; margin-top: 14px; }
+
+/* ===================================================================
+   MOBILE: makes everything stack into one column on phones.
+   Most people will view the site on their phone, so this matters.
+   =================================================================== */
+@media (max-width: 860px) {
+  .nav-links { display: none; }            /* hide menu links on small screens */
+  .hero h1 { font-size: 2.1rem; }
+  .cards,
+  .reviews,
+  .gallery { grid-template-columns: 1fr; }
+  .about-inner,
+  .contact-inner { grid-template-columns: 1fr; }
+}
