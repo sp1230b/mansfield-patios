@@ -1,100 +1,93 @@
 # 🌿 Stefan's Website Business — Start Here
 
-This folder contains a **complete demo gardening website** you can show to
-businesses. This guide explains how to look at it, change it, and use it to
-win customers.
+This folder contains a **finished demo website for a real business**:
+**Mansfield Landscaping & Sheds** (Mansfield, Nottinghamshire). They have a
+**5.0★ Google rating but no website** — a perfect first prospect.
 
 ---
 
-## 1. How to see the website in your browser (the important bit!)
+## 1. The real business this demo is built for
 
-You have two easy ways:
+| Detail | Value |
+|--------|-------|
+| Business | **Mansfield Landscaping & Sheds** |
+| Owner | **Dan** & team |
+| Type | Landscape gardener |
+| Area | 40 Heather Way, Mansfield NG18 3PQ |
+| Phone | **07739 546829** |
+| Google | **5.0★ (8 reviews)** — and **no website** |
+
+The reviews shown on the site are their **real Google reviews** (Sarah Bott,
+Michael Beckett, Pauline Clarke). The photos are tasteful stock placeholders —
+ask Dan for real job photos to swap in (see section 4).
+
+> Note: this business has **no email** publicly listed. The site uses the phone
+> number + a contact form. Once you sort a domain, add an email (there's a
+> commented line ready in `index.html`).
+
+---
+
+## 2. How to see the website in your browser
 
 ### Option A — just double-click it
-1. Open the folder `Documents\business_website` in File Explorer.
-2. Double-click **`index.html`**.
-3. It opens in your web browser (Chrome/Edge). That's the whole site. 🎉
+1. Open `Documents\business_website` in File Explorer.
+2. Double-click **`index.html`** → it opens in your browser. 🎉
+   *(Needs internet, as the fonts & photos load online.)*
 
-### Option B — use the preview inside Claude Code
-When Claude creates or edits a website, a **Launch preview** panel appears in
-the app. Click it to see the site live, right next to the chat.
-
-> Tip: after any change, just refresh the browser tab (press **F5**) to see it.
+### Option B — the Launch preview inside Claude Code
+When Claude edits the site, a **Launch preview** panel appears in the app —
+click it to see the site live next to the chat. After any change press **F5**.
 
 ---
 
-## 2. What's in this folder
+## 3. The plan, step by step
 
-| File | What it is |
-|------|------------|
-| `index.html` | The website content (text, sections, buttons) |
-| `styles.css` | The colours and design |
-| `README-FOR-STEFAN.md` | This guide |
+1. **Build the demo** ✅ (done — this is it).
+2. **Call Dan on 07739 546829** and say something like:
+   *"Hi Dan, I noticed Mansfield Landscaping doesn't have a website, so I built
+   you a free demo using your Google reviews — can I send you the link to look
+   at? No obligation."*
+3. **Send him the link** (host it first — see below). If he likes it → **charge
+   him**.
+4. **Sort his domain** (e.g. `mansfieldlandscaping.co.uk`):
+   - Buy it for him (~£8–12/year on **Namecheap**, **GoDaddy**, **123 Reg**) and
+     bill it back, **or** teach him to buy it himself.
 
-You only ever need these. No installing, no "building" — it just works.
-
----
-
-## 3. The business plan, step by step
-
-1. **Find a UK business with no website** (gardeners, plumbers, cleaners,
-   barbers, cafés). Lots of small local businesses still don't have one.
-2. **Build them a demo** by copying this template and changing the name,
-   services, phone number and colours (see section 4).
-3. **Call them** and say: *"Hi, I noticed you don't have a website, so I built
-   you a free demo — can I send you the link to look at?"*
-4. **Show them the link.** If they like it → you charge them.
-5. **Get them a domain** (their web address, e.g. `joesgardening.co.uk`):
-   - You buy it for them (cheap — about £8–12/year on sites like
-     **Namecheap**, **GoDaddy**, or **123 Reg**), and bill it back to them, OR
-   - Teach them to buy it themselves and you just put the site online.
-
-### How to actually put a finished site online (when they say yes)
-The easiest free/cheap options — ask Claude to walk you through any of these:
-- **Netlify** or **Cloudflare Pages** — drag this folder in, it's live in
-  seconds, then point their domain at it.
-- **GitHub Pages** — free hosting straight from a folder like this.
+### Putting it online (when he says yes)
+Ask Claude to walk you through any of these — all easy:
+- **Netlify** or **Cloudflare Pages** — drag this folder in; live in seconds.
+- **GitHub Pages** — free hosting from a folder like this.
 
 ---
 
-## 4. How to make a new site for a different business
+## 4. Making changes (no coding needed)
 
-You don't need to know how to code. **Just ask Claude Code in plain English.**
-Open this folder in Claude Code (Code tab) and type things like:
+Open this folder in Claude Code (**Code** tab) and just ask in plain English:
 
-- *"Make a copy of this site for a plumber called AquaFix in Leeds, blue colours."*
-- *"Change the phone number to 07123 456789 and the email to joe@example.com."*
-- *"Add a section about emergency call-outs."*
-- *"Replace the gardening photos with cleaning photos."*
+- *"Swap the portfolio photos for these real ones Dan sent."* (then share the files)
+- *"Add Dan's new email dan@mansfieldlandscaping.co.uk to the contact section."*
+- *"Make a version of this for a different gardener called …"*
 - *"How do I put this website online with a domain?"*
 
-Claude will edit the files for you. Then refresh the browser to see it.
-
-### If you'd rather edit by hand
-Open `index.html` in **Notepad**. Look for the notes in `<!-- ... -->` —
-they tell you exactly what to change (the business name, phone, email, area).
+### Editing by hand
+Open `index.html` in **Notepad** — the `<!-- comments -->` show exactly what to
+change. Colours live at the top of `styles.css` (`--forest` and `--gold`).
 
 ---
 
-## 5. Things to change for every new business
-
-In `index.html`:
-- The business name (currently **Greenfield Gardens**)
-- The phone number (currently `07700 900000`)
-- The email (currently `hello@greenfieldgardens.co.uk`)
-- The town/area (currently **Surrey**)
-- The services and reviews
-
-In `styles.css` (very top):
-- `--brand` — the main colour. Change `#2e7d32` (green) to any colour to
-  re-theme the whole site instantly.
+## Files in this folder
+| File | What it is |
+|------|------------|
+| `index.html` | The website content |
+| `styles.css` | The premium design (fonts, colours, animations) |
+| `README-FOR-STEFAN.md` | This guide |
 
 ---
 
 ## Quick recap
 - **See it:** double-click `index.html`.
-- **Change it:** ask Claude Code, or edit `index.html` in Notepad.
-- **Sell it:** find a local business with no site, build a demo, call them,
-  charge them, sort their domain.
+- **Pitch it:** call Dan on 07739 546829, send the link.
+- **Sell it:** charge for the site, sort the domain (Namecheap/GoDaddy), host
+  free on Netlify/Cloudflare Pages.
 
 Good luck Stefan! 🚀
