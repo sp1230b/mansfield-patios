@@ -1,0 +1,5 @@
+# Keep internal/working files out of the public GitHub repo
+.claude/
+dist/
+Prompt for Claude code.txt
+README-FOR-STEFAN.md
