@@ -18,6 +18,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Local SEO: helps Google understand this is a local business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Mansfield Patios & Landscaping",
+    "image": "https://lh3.googleusercontent.com/OsP7j_NctVxTE4a2GlPAI3BDCRuB6pEmg4nAPZ8p8XvFP45edBrZcVo2vI9LY0SxroOLz7EnZKWrrQsD9fu4II96M144MAjdf8OQ1h37aTK9XVvHHEUWEzsQrkAICg=w1200",
+    "telephone": "+447739546829",
+    "url": "https://sp1230b.github.io/mansfield-patios/",
+    "priceRange": "££",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mansfield",
+      "addressRegion": "Nottinghamshire",
+      "addressCountry": "GB"
+    },
+    "areaServed": ["Mansfield", "Forest Town", "Mansfield Woodhouse", "Sutton-in-Ashfield", "Kirkby-in-Ashfield"],
+    "description": "Patios, paving, fencing, turfing, decking, sheds and garden rooms across Mansfield and surrounding areas. Established, fully reviewed Checkatrade member since 2016.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "9.33",
+      "bestRating": "10",
+      "reviewCount": "88"
+    }
+  }
+  </script>
 </head>
 <body id="top">
 
@@ -200,11 +227,13 @@
                <li>✉️ <a href="mailto:dan@mansfieldpatios.co.uk">dan@mansfieldpatios.co.uk</a></li> -->
         </ul>
       </div>
-      <form class="contact-form reveal" onsubmit="event.preventDefault(); this.style.display='none'; document.getElementById('thanks').style.display='block';">
-        <input type="text" placeholder="Your name" required />
-        <input type="tel" placeholder="Telephone" required />
-        <input type="email" placeholder="Email (optional)" />
-        <textarea placeholder="Tell us about your garden…" rows="4" required></textarea>
+      <form id="enquiry-form" class="contact-form reveal">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="tel" name="phone" placeholder="Telephone" required />
+        <input type="email" name="email" placeholder="Email (optional)" />
+        <textarea name="message" placeholder="Tell us about your garden…" rows="4" required></textarea>
+        <!-- spam honeypot: bots fill this in, real people don't -->
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
         <button type="submit" class="btn btn-gold full">Send Request</button>
       </form>
       <div id="thanks" class="thanks reveal">✦ Thank you. Dan will be in touch very shortly.</div>
@@ -229,6 +258,38 @@
     const nav = document.querySelector('.nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ===== Contact form =====
+    // TO TURN ON REAL EMAILS: change the line below to the inbox enquiries
+    // should go to, e.g.  const ENQUIRY_EMAIL = "dan@example.com";
+    // Then submit the form once and click the confirmation link that
+    // FormSubmit emails to that address. After that, it just works.
+    const ENQUIRY_EMAIL = "REPLACE_WITH_EMAIL";
+
+    const form = document.getElementById('enquiry-form');
+    const thanks = document.getElementById('thanks');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      // Demo mode: until an email is set, just show the thank-you message
+      if (ENQUIRY_EMAIL === "REPLACE_WITH_EMAIL") {
+        form.style.display = 'none'; thanks.style.display = 'block'; return;
+      }
+      const btn = form.querySelector('button');
+      const original = btn.textContent;
+      btn.textContent = 'Sending…'; btn.disabled = true;
+      try {
+        const data = new FormData(form);
+        data.append('_subject', 'New website enquiry — Mansfield Patios & Landscaping');
+        const res = await fetch('https://formsubmit.co/ajax/' + ENQUIRY_EMAIL, {
+          method: 'POST', headers: { 'Accept': 'application/json' }, body: data
+        });
+        if (!res.ok) throw new Error('Network error');
+        form.style.display = 'none'; thanks.style.display = 'block';
+      } catch (err) {
+        btn.textContent = original; btn.disabled = false;
+        alert('Sorry, something went wrong sending your message. Please call us on 07739 546829.');
+      }
     });
   </script>
 </body>
