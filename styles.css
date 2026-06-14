@@ -87,7 +87,8 @@ body { font-family: var(--sans); color: var(--ink); background: var(--cream); li
 .hero {
   position: relative; min-height: 100vh;
   display: flex; align-items: center;
-  background: url("https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat;
+  /* real job photo from the business's Checkatrade profile */
+  background: url("https://lh3.googleusercontent.com/-_Iv1S_E84dBUE2XTpjqVA9BAWtSLX1MnmhBcYMn440SKZwKZxS6VTW4xGnsVW97xdNAk1enHOIGKCO64XWIpFvy_74QyodLfRdl5t99JpnxZFRzzNFvMvPtGY3pBg=w1600") center/cover no-repeat;
   color: #fff;
 }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(120deg, rgba(20,52,43,0.82) 0%, rgba(20,52,43,0.45) 60%, rgba(20,52,43,0.25) 100%); }
@@ -113,7 +114,7 @@ body { font-family: var(--sans); color: var(--ink); background: var(--cream); li
 /* ===== About ===== */
 .about { background: #fff; }
 .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
-.about-media { min-height: 460px; border-radius: var(--radius); background: url("https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1000&q=85") center/cover; box-shadow: 0 30px 60px rgba(20,52,43,0.18); }
+.about-media { min-height: 460px; border-radius: var(--radius); background: url("https://lh3.googleusercontent.com/NRDXQlfDazKNsqBNbcM_6r6lhgyOSUhkfWSBXmn_3v_f3h3HYhiwZG_XfnFq7wGwQoSRLHFBJPg-LVUKe0aHLA797FX76TfSkk3aIPQGxGB_Mc4NLAZu-HrOquS92A=w900") center/cover; box-shadow: 0 30px 60px rgba(20,52,43,0.18); }
 .about-text p { color: var(--muted); margin-bottom: 18px; font-size: 1.05rem; }
 .about-stats { display: flex; gap: 36px; margin-top: 30px; }
 .about-stats .big { display: block; font-family: var(--serif); font-size: 2.2rem; font-weight: 600; color: var(--gold); }
@@ -129,12 +130,13 @@ body { font-family: var(--sans); color: var(--ink); background: var(--cream); li
   background: linear-gradient(transparent 45%, rgba(20,52,43,0.78)); opacity: 0; transition: opacity 0.3s ease;
 }
 .g-item:hover figcaption { opacity: 1; }
-.g1 { background-image: url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=85"); }
-.g2 { background-image: url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=85"); }
-.g3 { background-image: url("https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=800&q=85"); }
-.g4 { background-image: url("https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=800&q=85"); }
-.g5 { background-image: url("https://images.unsplash.com/photo-1568901839119-631418a3910d?auto=format&fit=crop&w=800&q=85"); }
-.g6 { background-image: url("https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=800&q=85"); }
+/* real job photos from the business's Checkatrade profile (Google CDN) */
+.g1 { background-image: url("https://lh3.googleusercontent.com/OsP7j_NctVxTE4a2GlPAI3BDCRuB6pEmg4nAPZ8p8XvFP45edBrZcVo2vI9LY0SxroOLz7EnZKWrrQsD9fu4II96M144MAjdf8OQ1h37aTK9XVvHHEUWEzsQrkAICg=w800"); }
+.g2 { background-image: url("https://lh3.googleusercontent.com/cuslWDq_-qUBK1k8nAliMkhP3FJ2qUyzfMc4UJmrCChTjGPQ_xs1Fh3b9WOTkxIx9BoNxDA2X5fyYv8ewsGI0PSNxsl8wkE9OE7IjriXf7L6LIxkL-8IMPo_C0oxmt0=w800"); }
+.g3 { background-image: url("https://lh3.googleusercontent.com/OKAbjcr0-4E5lpYcXxMmDWfuRQ-U2XDgST9_ApDkumAxFKaZMC2ftwPeIWyIG8vYw9OYzo6Tg55nv7wDYsdzNppFBR-OyjUZ2gZrvpk0REVZaEg6OPZ86LxiZLtakw=w800"); }
+.g4 { background-image: url("https://lh3.googleusercontent.com/4L7WdPhoN2fz1q63MwUFRoTHLjlIGatYFaURHW_BcSJxpH0m03Ox8wIJD_YuG0bdDSw3jcVvFp4egXqbytV7osWy3QEgg1-hc9B_Hze2pa0nUcLyD2e90NTQEW44mQ=w800"); }
+.g5 { background-image: url("https://lh3.googleusercontent.com/FjjrLkO9vWH3ZLQeyOsZXgY4EPYox4DNUNK9gfsHUhyJQrJJwSbvfA2A3kOtHzWJ3solsQP_bLduEHttyRMzXoM1iW6EOuHp4EfBh4-J8qxr6TTx1kOjbWtOVRZ8ww=w800"); }
+.g6 { background-image: url("https://lh3.googleusercontent.com/-_Iv1S_E84dBUE2XTpjqVA9BAWtSLX1MnmhBcYMn440SKZwKZxS6VTW4xGnsVW97xdNAk1enHOIGKCO64XWIpFvy_74QyodLfRdl5t99JpnxZFRzzNFvMvPtGY3pBg=w800"); }
 
 /* ===== Reviews ===== */
 .reviews { background: var(--forest); color: #fff; }

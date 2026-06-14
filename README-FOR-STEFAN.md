@@ -1,8 +1,8 @@
 # 🌿 Stefan's Website Business — Start Here
 
 This folder contains a **finished demo website for a real business**:
-**Mansfield Landscaping & Sheds** (Mansfield, Nottinghamshire). They have a
-**5.0★ Google rating but no website** — a perfect first prospect.
+**Mansfield Patios & Landscaping** (Mansfield, Nottinghamshire). They have a
+strong reputation but **no website** — a perfect first prospect.
 
 ---
 
@@ -10,20 +10,24 @@ This folder contains a **finished demo website for a real business**:
 
 | Detail | Value |
 |--------|-------|
-| Business | **Mansfield Landscaping & Sheds** |
-| Owner | **Dan** & team |
-| Type | Landscape gardener |
-| Area | 40 Heather Way, Mansfield NG18 3PQ |
+| Business | **Mansfield Patios & Landscaping** (also listed on Google as "Mansfield landscaping and sheds") |
+| Owner | **Mr Daniel Silcock** ("Dan") — sole trader |
 | Phone | **07739 546829** |
-| Google | **5.0★ (8 reviews)** — and **no website** |
+| Area | Mansfield, Forest Town, Mansfield Woodhouse, Sutton, Kirkby + surrounding |
+| Checkatrade | **9.33/10 from 88 reviews**, member since 2016, £1,000 guarantee |
+| Website | **None yet** — this is the opportunity |
 
-The reviews shown on the site are their **real Google reviews** (Sarah Bott,
-Michael Beckett, Pauline Clarke). The photos are tasteful stock placeholders —
-ask Dan for real job photos to swap in (see section 4).
+Everything on the site is **real**, pulled from their Checkatrade profile:
+- The **reviews** are genuine customer reviews (Bruce V and verified customers).
+- The **photos** are the business's own job photos (patios, turf, fencing).
+- The **services** match what they actually offer.
 
-> Note: this business has **no email** publicly listed. The site uses the phone
-> number + a contact form. Once you sort a domain, add an email (there's a
-> commented line ready in `index.html`).
+> The photos load from Google's image servers (where Checkatrade hosts them).
+> They work fine, but for a site you're selling it's best to ask Dan for the
+> original photos and save them in this folder — then ask Claude to swap them in.
+
+> Dan has **no public email**. The site uses his phone + a contact form. Once a
+> domain is bought, add an email (there's a commented line ready in `index.html`).
 
 ---
 
@@ -32,7 +36,7 @@ ask Dan for real job photos to swap in (see section 4).
 ### Option A — just double-click it
 1. Open `Documents\business_website` in File Explorer.
 2. Double-click **`index.html`** → it opens in your browser. 🎉
-   *(Needs internet, as the fonts & photos load online.)*
+   *(Needs internet — fonts and photos load online.)*
 
 ### Option B — the Launch preview inside Claude Code
 When Claude edits the site, a **Launch preview** panel appears in the app —
@@ -43,13 +47,13 @@ click it to see the site live next to the chat. After any change press **F5**.
 ## 3. The plan, step by step
 
 1. **Build the demo** ✅ (done — this is it).
-2. **Call Dan on 07739 546829** and say something like:
-   *"Hi Dan, I noticed Mansfield Landscaping doesn't have a website, so I built
-   you a free demo using your Google reviews — can I send you the link to look
-   at? No obligation."*
+2. **Call Dan on 07739 546829**:
+   *"Hi Dan, I noticed Mansfield Patios & Landscaping doesn't have a website, so
+   I built you a free demo using your real reviews and photos — can I send you
+   the link to look at? No obligation."*
 3. **Send him the link** (host it first — see below). If he likes it → **charge
    him**.
-4. **Sort his domain** (e.g. `mansfieldlandscaping.co.uk`):
+4. **Sort his domain** (e.g. `mansfieldpatios.co.uk`):
    - Buy it for him (~£8–12/year on **Namecheap**, **GoDaddy**, **123 Reg**) and
      bill it back, **or** teach him to buy it himself.
 
@@ -64,14 +68,14 @@ Ask Claude to walk you through any of these — all easy:
 
 Open this folder in Claude Code (**Code** tab) and just ask in plain English:
 
-- *"Swap the portfolio photos for these real ones Dan sent."* (then share the files)
-- *"Add Dan's new email dan@mansfieldlandscaping.co.uk to the contact section."*
-- *"Make a version of this for a different gardener called …"*
+- *"Swap in these real photos Dan sent."* (then share the files)
+- *"Add Dan's email dan@mansfieldpatios.co.uk to the contact section."*
+- *"Add more of their services, like driveways and decking."*
 - *"How do I put this website online with a domain?"*
 
 ### Editing by hand
-Open `index.html` in **Notepad** — the `<!-- comments -->` show exactly what to
-change. Colours live at the top of `styles.css` (`--forest` and `--gold`).
+Open `index.html` in **Notepad** — the `<!-- comments -->` show what to change.
+Colours live at the top of `styles.css` (`--forest` and `--gold`).
 
 ---
 
@@ -79,7 +83,7 @@ change. Colours live at the top of `styles.css` (`--forest` and `--gold`).
 | File | What it is |
 |------|------------|
 | `index.html` | The website content |
-| `styles.css` | The premium design (fonts, colours, animations) |
+| `styles.css` | The premium design (fonts, colours, animations, photos) |
 | `README-FOR-STEFAN.md` | This guide |
 
 ---
@@ -87,7 +91,6 @@ change. Colours live at the top of `styles.css` (`--forest` and `--gold`).
 ## Quick recap
 - **See it:** double-click `index.html`.
 - **Pitch it:** call Dan on 07739 546829, send the link.
-- **Sell it:** charge for the site, sort the domain (Namecheap/GoDaddy), host
-  free on Netlify/Cloudflare Pages.
+- **Sell it:** charge for the site, sort the domain, host free on Netlify/Cloudflare.
 
 Good luck Stefan! 🚀
